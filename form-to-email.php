@@ -21,12 +21,12 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = $visitor_email;//<== update the email address
+$email_from = "sagar.cooper@gmail.com";//<== update the email address
 $email_subject = "GitHub Profile Contact";
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message".
 
-$to = "sthakur@clemson.edu";//<== update the email address
+$to = "sagar.cooper@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
